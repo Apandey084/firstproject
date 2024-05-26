@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(212, 223, 221);
+            border: 2px solid black;
+            /* position: sticky; */
+
+        }
+
+        #navbar ul li a {
+
+            font-size: 1rem;
+            padding: 0px 7px;
+            padding-bottom: 8px;
+            text-decoration-line: none;
+            color: black;
+            font-family: "Montserrat", sans-serif;
+            margin: 20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #navbar ul li a:hover {
+            background-color: rgb(221, 31, 31);
+            cursor: pointer;
+            color: wheat;
+
+        }
+
+        .ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin: 5px;
+            text-decoration: none;
+            padding-left: 614px;
+            padding-top: 15px;
+
+
+
+        }
+
+        #logo {
+            border: 2px solid violet;
+            display: block;
+
+
+        }
+
+        #imgid {
+            width: 168px;
+            height: 100px;
+        }
+        .cont1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .profilepic {
+            border: 2px solid violet;
+            background-color: rgb(205, 189, 215);
+            /* padding: 323px; */
+            width: 100%;
+            height: 346px;
+            margin: 10px;
+
+
+        }
+
+        #id-1 {
+            border: 2px solid goldenrod;
+            background-color: brown;
+            width: 509px;
+
+            /* padding:100px ; */
+            /* margin-right: 5px; */
+
+        }
+
+        .img {
+            width: 509px;
+            height: 346px;
+        }
+
+        #id-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* padding: 10px,0px; */
+            align-items: center;
+        }
+
+        .cont2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 10px solid black;
+            background-color: rgb(191, 238, 238);
+
+        }
+
+        .unit {
+            border: 5px solid violet;
+            border-radius: 2px;
+            width: 440px;
+            height: 74px;
+            background-color: orange;
+            color: black;
+
+
+
+
+        }
+
+        .cont2 a {
+            text-decoration-line: none;
+        }
+
+        .cont3 {
+            border: 5px solid violet;
+            background-color: beige;
+            width: 100%;
+            height: 650px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-auto-columns: 1fr; */
+            grid-template-rows: 1fr 1fr 0fr;
+            grid-gap: 20px;
+        }
+
+        .imggall {
+            width: 311px;
+            height: 315px;
+        }
+
+        .cont4 {
+            height: 298px;
+            width: 100%;
+            background-color: cadetblue;
+            border: 2px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #contact img {
+            height: 200px;
+            width: 100%;
+
+        }
+
+        .cont5 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid salmon;
+            background-color: sandybrown;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            /* font-family: "Alumni Sans Collegiate One", sans-serif; */
+            /* font-size: 20px; */
+            font-family: "Angkor", serif;
+            color: white;
+        }
+
+        p {
+            font-family: "Fira Sans", sans-serif;
+        }
+        .unit {
+            text-align: center;
+        }
+/* 
+
+
+
+
+
+        @media only screen and (max-width:300px){
+            
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            #box-2{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            #box-3{
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 800px)  {
+            #box-4{
+                display: block;
+                background-color: green;
+            }
+        } */
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Alumni+Sans+Collegiate+One:ital@0;1&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Lilita+One&family=Lobster&family=Rakkas&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Alumni+Sans+Collegiate+One:ital@0;1&family=Angkor&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Lilita+One&family=Lobster&family=Rakkas&family=Tilt+Neon:YROT@-10&display=swap"
+        rel="stylesheet">
+        
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img id="imgid" src="pr logo 2.png" alt="MyOnlineMeal.com">
+        </div>
+        <ul class="ul">
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="notes.html">NOTES</a></li>
+            <li class="item"><a href="about.html">ABOUT US </a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="cont1">
+
+        <a href="">
+            <div id="id-1" class="profilepic"><img src="amit.jpg" alt="" class="img">
+        </a>
+
+    </div>
+    <div id="id-2" class="profilepic">
+        <h1>DR. AMIT SHARMA</h1>
+        <h3> Professor</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.\n Fugit, tempore, nulla distinctio sed repellat
+            incidunt corrupti <br>landitiis praesentium enim molestias repudiandae? Iusto alias sit,<br> pariatur
+            voluptate quidem nemo inventore iste.</p>
+        <details>
+            <summary>know more</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti, adipisci debitis animi
+                temporibus explicabo beatae quo quisquam quos? Ratione at veritatis eligendi tempore perferendis, dicta
+                laboriosam quod voluptate quibusdam!</p>
+        </details>
+    </div>
+    </div>
+    <div class="cont2">
+        <div class="heading">
+            <h1>notes section</h1>
+        </div>
+        <a href="UNIT-1 MOT, LC, SOLID STATE & GREEN CHEMISTRY 2023-24.pdf">
+            <div id="uid-1" class="unit"> <h3 class="unit">UNIT 1 NOTES</h3></div>
+        </a>
+        <a href="UNIT-1 MOT, LC, SOLID STATE & GREEN CHEMISTRY 2023-24.pdf">
+            <div id="uid-2" class="unit"> <h3 class="unit">UNIT 2 NOTES</h3></div>
+        </a>
+        <a href="UNIT-1 MOT, LC, SOLID STATE & GREEN CHEMISTRY 2023-24.pdf">
+            <div id="uid-3" class="unit"> <h3 class="unit">UNIT 3 NOTES</h3></div>
+        </a>
+        <a href="UNIT-1 MOT, LC, SOLID STATE & GREEN CHEMISTRY 2023-24.pdf">
+            <div id="uid-4" class="unit"> <h3 class="unit">UNIT 4 NOTES</h3></div>
+        </a>
+        <a href="UNIT-1 MOT, LC, SOLID STATE & GREEN CHEMISTRY 2023-24.pdf">
+            <div id="uid-4" class="unit"> <h3 class="unit">UNIT 5 NOTES</h3></div>
+        </a>
+        
+
+
+    </div>
+
+    <div class="cont3">
+        <div id="gid-1" class="gallery"><img src="a.jpg" alt="" class="imggall"></div>
+        <div id="gid-2" class="gallery"><img src="aa.jpg" alt="" class="imggall"></div>
+        <div id="gid-3" class="gallery"><img src="ami.jpg" alt="" class="imggall"></div>
+        <div id="gid-4" class="gallery"><img src="amit sir pic.jpg" alt="" class="imggall"></div>
+        <div id="gid-5" class="gallery"><img src="a.jpg" alt="" class="imggall"></div>
+        <div id="gid-6" class="gallery"><img src="ami.jpg" alt="" class="imggall"></div>
+        <div id="gid-7" class="gallery"><img src="aa.jpg" alt="" class="imggall"></div>
+        <div id="gid-8" class="gallery"><img src="amit sir pic.jpg" alt="" class="imggall"></div>
+
+    </div>
+    <div class="cont4">
+        <h1 class="heading"># video gallery</h1>
+        <video src="sanjay 2.mp4" width="550px" height="200" controls></video>
+    </div>
+
+
+    <div class="cont5">
+
+        <h1>our contact</h1>
+        <a href="https://www.youtube.com/@chemistrybydr.amitsharma8836/featured">
+            <div id="as" class="contact"><img id="img" src="sanyoutubelogo.jpg" alt="" srcset=""></div>
+        </a>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

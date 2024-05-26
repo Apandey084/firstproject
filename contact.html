@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(212, 223, 221);
+            border: 2px solid black;
+            /* position: sticky; */
+
+        }
+
+        #navbar ul li a {
+
+            font-size: 1rem;
+            padding: 0px 7px;
+            padding-bottom: 8px;
+            text-decoration-line: none;
+            color: black;
+            font-family: "Montserrat", sans-serif;
+            margin: 20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #navbar ul li a:hover {
+            background-color: rgb(221, 31, 31);
+            cursor: pointer;
+            color: wheat;
+
+        }
+
+        .ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin: 5px;
+            text-decoration: none;
+            padding-left: 614px;
+            padding-top: 15px;
+
+
+
+        }
+
+        #logo {
+            border: 2px solid violet;
+            display: block;
+
+
+        }
+
+        #imgid {
+            width: 168px;
+            height: 100px;
+        }
+        .cont{
+            border: 5px solid violet;
+            background-image: url('contact.jpg');
+            max-width: 100%;
+            height: 841px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img id="imgid" src="pr logo 2.png" alt="MyOnlineMeal.com">
+        </div>
+        <ul class="ul">
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="notes.html">NOTES</a></li>
+            <li class="item"><a href="about.html">ABOUT US </a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="cont">
+        <h2>Hey I am so busy , so iam unable to contact you</h2>
+        <br><h4>MOBILE NUMBER : 9984579291</h4>
+    </div>
+</body>
+</html>
